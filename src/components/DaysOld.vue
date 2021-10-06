@@ -1,8 +1,8 @@
 <template>
     <section class="row">
-        <div>
-            <h2>You are <span>{{ data }}</span> days old</h2>
-        </div>
+        <div class="text-uppercase">You are </div>
+        <div class="text-uppercase">{{ data.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') }}</div>
+        <div class="text-uppercase">days old</div>
     </section>
 </template>
 
@@ -17,11 +17,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 section{
-    background: #F7F6F2;
-    padding: 50px 0;
-    color: #4B6587;
-}
-span{
-    font-size: 1.3em;
+    padding: 90px 0;
+    color: white;
+    font-size: 3em;
 }
 </style>

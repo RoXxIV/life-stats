@@ -1,8 +1,7 @@
 <template>
     <section class="row">
-        <div>
-            <h2>You have taken <span>{{ data * 20000 }}</span> breaths</h2>
-        </div>
+        <div class="text-uppercase breathText">You have taken</div>
+        <div class="text-uppercase dataBreath">{{ (data * 20000).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') }} breaths</div>
     </section>
 </template>
 
@@ -19,10 +18,13 @@ export default {
 <style scoped>
 section{
     color: #F7F6F2;
-    padding: 50px 0;
-    background: #4B6587;
+    padding: 90px 0;
+    background: #203040;
 }
-span{
-    font-size: 1.3em;
+.breathText{
+    font-size: 3em;
+}
+.dataBreath{
+   font-size: 2em; 
 }
 </style>
