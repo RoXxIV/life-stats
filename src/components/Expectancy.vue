@@ -6,7 +6,7 @@
         <div class="text-uppercase custom-data">{{ getRestWeeks }} weeks</div>
         <div class="text-uppercase custom-text">remaining</div>
         <div class="row">
-            <table id="square" class="col-6 col-md-4">
+            <table id="square" class="col-6 col-md-4 mx-auto">
                 <tbody>
                     <tr v-for="n in 80" :key="n">
                         <td v-for="n in 52" :key="n"></td>
