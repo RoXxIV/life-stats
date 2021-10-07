@@ -31,6 +31,7 @@
 </header>
 <main v-if="showStats">
   <DaysOld :data="getAllDays" />
+  <Expectancy :data="getAllDays" />
   <BreathsTaken :data="getAllDays" />
 </main>
 </template>
@@ -39,11 +40,13 @@
 // @ is an alias to /src
 import DaysOld from '../components/DaysOld.vue'
 import BreathsTaken from '../components/BreathsTaken.vue'
+import Expectancy from '../components/Expectancy.vue'
 export default {
   name: 'Home',
   components: {
     DaysOld,
-    BreathsTaken
+    BreathsTaken,
+    Expectancy,
   },
   data () {
     return {
