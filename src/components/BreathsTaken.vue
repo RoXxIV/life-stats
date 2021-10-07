@@ -19,7 +19,6 @@ export default {
 section{
     color: #F7F6F2;
     padding: 90px 0;
-    background: #203040;
 }
 .breathText{
     font-size: 3em;
